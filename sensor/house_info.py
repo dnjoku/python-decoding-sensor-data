@@ -12,3 +12,11 @@ class HouseInfo(object)
             elif rec_area == int(record['area']):
                 field_data.append(record[field])
         return field_data
+
+        def get_data_by_data(self, field, rec_date=date.today()):
+            field_data = []
+
+            for record in self.data:
+                if rec_date.strftime("%m/%d/%y") == record['date']:
+                    field_data.append(record[field])
+            return field_data
