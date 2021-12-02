@@ -1,7 +1,7 @@
 from house_info import house_info
 from datetime import date
 
-class ParticleData(HouseInfo)
+class ParticleData(HouseInfo):
     def _convert_data(self, data):
         recs = []
         for rec in data:
