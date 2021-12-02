@@ -1,7 +1,7 @@
 from house_info import HouseInfo
 from datetime import date
 
-class TermperatureData(HouseInfo):
+class TemperatureData(HouseInfo):
     def _convert_data(self, data):
         recs = []
         for rec in data:
