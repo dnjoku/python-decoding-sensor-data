@@ -14,4 +14,5 @@ class HumidityData(HouseInfo):
         return self._convert_data(recs)
 
     def get_data_by_date(self, rec_date=date.today()):
-        recs = super().
+        recs = super().get_data_by_date("humidity", rec_date)
+        return self._convert_data(recs)
